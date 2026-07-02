@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Pasang plugin @egoist seperti yang dilakukan di video versi v4 */
+@plugin "@egoist/tailwindcss-icons" {
+  /* Di sini kita tidak perlu memanggil fungsi getIconCollections lagi, */
+  /* Tailwind v4 otomatis mendeteksi @iconify-json yang sudah di-install */
+}
+
+@theme {
+  /* 1. Container Customization */
+  --container-center: true;
+
+  /* Use camelCase for the sub-names. This is the cleanest v4 method. */
+  /* This creates: text-iconSm, text-iconMd, etc. */
+  --font-size-iconSm: 20px;
+  --font-size-iconMd: 24px;
+  --font-size-iconLg: 28px;
+  --font-size-iconXl: 32px;
+
+  --color-brands-dark-green: #118871;
+  --color-brands-light-green: #15ab8e;
+
+  --font-sans: "Inter", "sans-serif";
+  --font-brand: "Red Rose", "serif";
+
+  --animate-slide-top: slide-top 0.5s cubic-bezier(0.57, 0.14, 0, 1.07) both;
+  --animate-slide-bottom: slide-bottom 1s cubic-bezier(0.57, 0.14, 0, 1.07) both;
+}
+
+/* 6. Custom Keyframes Standar (Ditulis di luar blok @theme) */
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
