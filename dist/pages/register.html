@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <div
+        class="flex h-dvh flex-col items-center justify-center bg-green-50 p-4"
+      >
+        <div class="flex w-full flex-col">
+          <!-- Illustration -->
+          <img
+            src="../assets/images/logo-green.svg"
+            alt="Illustration"
+            class="h-[168px] w-[168px] mx-auto"
+          />
+          <!-- end illustration -->
+
+          <!-- title + description -->
+          <div class="mb-5 mt-8 flex flex-col">
+            <h1 class="text-center text-lg font-semibold text-gray-900">
+              Buat Akun Baru
+            </h1>
+            <p class="text-center text-xs font-medium text-gray-400">
+              Hanya beberapa langkah untuk buat akun baru Anda
+            </p>
+          </div>
+          <!-- end title description -->
+
+          <!-- form -->
+          <form action="#" method="post" class="flex flex-col gap-4 w-full">
+            <!-- input name -->
+            <div class="flex flex-col gap-y-1.5">
+              <div class="relative w-full">
+                <input
+                  id=""
+                  type="text"
+                  class="w-full bg-white rounded-2xl border-gray-400 p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  placeholder="Nama Lengkap"
+                />
+                <div
+                  class="absolute start-0 inset-y-0 text-md flex items-center ps-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-person-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- input name -->
+
+            <!-- input email -->
+            <div class="flex flex-col gap-y-1.5">
+              <div class="relative w-full">
+                <input
+                  id=""
+                  type="email"
+                  class="w-full bg-white rounded-2xl border-gray-400 p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  placeholder="Email"
+                />
+                <div
+                  class="absolute start-0 inset-y-0 text-md flex items-center ps-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-mail-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- input email -->
+
+            <!-- button action -->
+            <button
+              type="button"
+              class="inline-flex items-center justify-center bg-brands-light-green p-2.5 rounded-2xl text-white hover:bg-brands-dark-green focus:outline-none transition-all focus:ring-2 focus:ring-green-400 uppercase font-semibold text-sm gap-2 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+            >
+              <span>Lanjutkan</span>
+              <span
+                class="i-material-symbols-chevron-right-rounded text-lg"
+              ></span>
+            </button>
+            <!-- button action -->
+
+            <!-- help text -->
+            <p class="mt-3 text-center text-xs text-neutral-400">
+              Sudah punya akun?
+              <a
+                href=""
+                class="text-xs font-semibold text-brands-light-green hover:text-brands-light-green/70 focus:outline-none focus:ring-2 focus:ring-green-400"
+                >Masuk dengan akun saya</a
+              >
+            </p>
+            <!-- help text -->
+          </form>
+          <!-- end form -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
