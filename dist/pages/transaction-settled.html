@@ -15,78 +15,51 @@
       href="../assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>Dashboard</title>
+    <title>Transaction History</title>
   </head>
   <body>
-    <div class="container max-w-" 768px="">
-      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 p-4">
-        <div class="flex w-full flex-col">
-          <!-- avatar + Name -->
-          <div class="mb-4 flex">
-            <a
-              href=""
-              class="flex items-center gap-2 hover:opacity-80 transition-all focus:outline-none focus:ring-2 focus:ring-green-400"
-            >
-              <img
-                src="https://api.dicebear.com/7.x/lorelei/svg?seed=JohnDoe/300"
-                alt="Avatar"
-                class="size-8"
-              />
-              <span class="text-lg font-semibold text-gray-900">Sphi Yhon</span>
-            </a>
-          </div>
-          <!-- end avatar + Name -->
+    <div class="container max-w-[768px]">
+      <!-- App Bar -->
+      <div
+        class="fixed left-0 top-0 z-10 flex w-full items-center gap-5 bg-white p-4 text-gray-900"
+      >
+        <a
+          href="#"
+          class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+          onclick="history.back()"
+        >
+          <span
+            class="i-material-symbols-arrow-left-alt-rounded text-icon-md block"
+          ></span>
+        </a>
+        <p class="text-lg font-semibold">Riwayat Transaksi</p>
+      </div>
+      <!-- ./ App Bar -->
 
-          <!-- card balance + Action -->
-          <div class="mb-8 flex-col">
-            <!-- card balance -->
-            <div
-              class="flex flex-col h-[165px] bg-gradient-to-b from-brands-light-green to-emerald-400 justify-between rounded-2xl p-5 text-white"
-            >
-              <h1 class="font-brand text-2xl font-bold">Kusaku</h1>
-              <h2 class="flex items-center gap-2 text-2xl font-medium">
-                <span>Rp. 52.000.000,00</span>
-                <button
-                  type="button"
-                  class="i-material-symbols-visibility text-lg"
-                ></button>
-              </h2>
-            </div>
-            <!-- card balance -->
-
-            <!-- card action -->
-            <div class="flex gap-3 mt-2 jsuticen">
-              <button
-                type="button"
-                class="inline-flex w-full items-center justify-center bg-transparent p-2 rounded-2xl text-brands-light-green hover:bg-brands-light-green hover:text-white focus:outline-none transition-all focus:ring-2 focus:ring-green-400 uppercase font-semibold text-xs gap-2 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 disabled:border-gray-300 disabled:border-tran border-2 border-brands-light-green"
-              >
-                <span
-                  class="i-material-symbols-download-rounded text-icon-md"
-                ></span>
-                <span>Top Up</span>
-              </button>
-
-              <button
-                type="button"
-                class="inline-flex w-full items-center justify-center bg-brands-light-green p-2 rounded-2xl text-white hover:bg-brands-dark-green focus:outline-none transition-all focus:ring-2 focus:ring-green-400 uppercase font-semibold text-xs gap-2 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
-              >
-                <span class="i-material-symbols-upload text-icon-md"></span>
-                <span>Transfer</span>
-              </button>
-            </div>
-            <!-- card action -->
-          </div>
-          <!-- card balance + Action -->
-
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 pb-[80px] px-4">
+        <div class="mt-[88px] flex flex-col w-full">
           <div class="bg-white p-2.5 shadow-md rounded-[20px]">
             <!-- card header -->
-            <div class="flex justify-between mb-2 p-2.5">
-              <p class="font-semibold text-gray-900">Riwayat Transaksi</p>
-              <a
-                href=""
-                class="text-xs font-semibold text-brands-light-green hover:text-brands-light-green/70 focus:outline-none focus:ring-2 focus:ring-green-400"
-                >Lihat Lainnya</a
-              >
+
+            <div class="flex flex-col gap-y-1.5 mb-2">
+              <div class="relative">
+                <input
+                  id="my-input-text"
+                  type="text"
+                  class="w-full border-1 bg-white rounded-2xl border-gray-400 p-3 pe-12 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  placeholder="cari transaksi"
+                />
+                <div
+                  class="absolute start-0 inset-y-0 text-md flex items-center ps-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <!-- <span class="i-material-symbols-search-rounded"></span> -->
+                </div>
+                <div
+                  class="absolute inset-y-0 end-0 flex items-center pe-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-search-rounded"></span>
+                </div>
+              </div>
             </div>
             <!-- end card header -->
 
@@ -102,72 +75,7 @@
                 ></span>
                 <span class="flex flex-col">
                   <span class="text-sm font-semibold text-gray-900 line-clamp-2"
-                    >Olive Carroll</span
-                  >
-                  <span class="text-xs text-gray-500 line-clamp-2">August</span>
-                </span>
-              </span>
-              <!-- end Left icon -->
-
-              <!-- Right icon -->
-              <span class="flex items-center gap-2 flex-shrink-0">
-                <span class="text-xs font-medium text-red-500">Rp. 50.000</span>
-                <span
-                  class="i-material-symbols-chevron-right-rounded text-md text-gray-900"
-                ></span>
-              </span>
-              <!-- end Right Icon -->
-            </a>
-            <div class="my-2.5 flex gap-4 whitespace-nowrap px-5">
-              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
-            </div>
-            <!-- end items -->
-
-            <!-- items -->
-            <a
-              href="#"
-              class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg p-3 rounded-2xl"
-            >
-              <!-- Left icon -->
-              <span class="flex items-center gap-5">
-                <span
-                  class="i-material-symbols-download-rounded text-lg text-brands-light-green flex-shrink-0"
-                ></span>
-                <span class="flex flex-col">
-                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
-                    >Tomas Durgan</span
-                  >
-                  <span class="text-xs text-gray-500 line-clamp-2">July</span>
-                </span>
-              </span>
-              <!-- end Left icon -->
-
-              <!-- Right icon -->
-              <span class="flex items-center gap-2 flex-shrink-0">
-                <span class="text-xs font-medium text-red-500">Rp. 50.000</span>
-                <span
-                  class="i-material-symbols-chevron-right-rounded text-md text-gray-900"
-                ></span>
-              </span>
-              <!-- end Right Icon -->
-            </a>
-            <div class="my-2.5 flex gap-4 whitespace-nowrap px-5">
-              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
-            </div>
-            <!-- end items -->
-            <!-- items -->
-            <a
-              href="#"
-              class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg p-3 rounded-2xl"
-            >
-              <!-- Left icon -->
-              <span class="flex items-center gap-5">
-                <span
-                  class="i-material-symbols-download-rounded text-lg text-brands-light-green flex-shrink-0"
-                ></span>
-                <span class="flex flex-col">
-                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
-                    >Gina West</span
+                    >Pam Bergstrom</span
                   >
                   <span class="text-xs text-gray-500 line-clamp-2"
                     >December</span
@@ -202,9 +110,43 @@
                 ></span>
                 <span class="flex flex-col">
                   <span class="text-sm font-semibold text-gray-900 line-clamp-2"
-                    >Karla Schimmel</span
+                    >Carlos Hegmann</span
                   >
-                  <span class="text-xs text-gray-500 line-clamp-2">May</span>
+                  <span class="text-xs text-gray-500 line-clamp-2">August</span>
+                </span>
+              </span>
+              <!-- end Left icon -->
+
+              <!-- Right icon -->
+              <span class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs font-medium text-red-500">Rp. 75.000</span>
+                <span
+                  class="i-material-symbols-chevron-right-rounded text-md text-gray-900"
+                ></span>
+              </span>
+              <!-- end Right Icon -->
+            </a>
+            <div class="my-2.5 flex gap-4 whitespace-nowrap px-5">
+              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+            </div>
+            <!-- end items -->
+            <!-- items -->
+            <a
+              href="#"
+              class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg p-3 rounded-2xl"
+            >
+              <!-- Left icon -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="i-material-symbols-download-rounded text-lg text-brands-light-green flex-shrink-0"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Rick Breitenberg I</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-2"
+                    >November</span
+                  >
                 </span>
               </span>
               <!-- end Left icon -->
@@ -212,6 +154,39 @@
               <!-- Right icon -->
               <span class="flex items-center gap-2 flex-shrink-0">
                 <span class="text-xs font-medium text-red-500">Rp. 50.000</span>
+                <span
+                  class="i-material-symbols-chevron-right-rounded text-md text-gray-900"
+                ></span>
+              </span>
+              <!-- end Right Icon -->
+            </a>
+            <div class="my-2.5 flex gap-4 whitespace-nowrap px-5">
+              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+            </div>
+            <!-- end items -->
+
+            <!-- items -->
+            <a
+              href="#"
+              class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg p-3 rounded-2xl"
+            >
+              <!-- Left icon -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="i-material-symbols-download-rounded text-lg text-brands-light-green flex-shrink-0"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Wilbert Bins</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-2">July</span>
+                </span>
+              </span>
+              <!-- end Left icon -->
+
+              <!-- Right icon -->
+              <span class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs font-medium text-red-500">Rp. 75.000</span>
                 <span
                   class="i-material-symbols-chevron-right-rounded text-md text-gray-900"
                 ></span>
@@ -226,54 +201,50 @@
         </div>
       </div>
 
-      <!-- navbar -->
+      <!-- ./ Title -->
+
+      <!-- Navbar -->
       <div
-        class="flex justify-evenly bg-white z-10 left-0 fixed bottom-0 w-full"
+        class="fixed bottom-0 left-0 z-10 flex w-full justify-evenly bg-white"
       >
         <a
           href="#"
-          class="w-full group flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+          class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
         >
           <span
-            class="i-material-symbols-home-outline-rounded text-xl inline group-hover:hidden"
+            class="i-material-symbols-home-outline-rounded text-icon-md inline group-hover:hidden"
           ></span>
-
           <span
-            class="i-material-symbols-home-rounded text-xl hidden group-hover:inline"
+            class="i-material-symbols-home-rounded text-icon-md hidden group-hover:inline"
           ></span>
-
-          <span class="text-xs font-semibold">Home</span>
+          <span class="text-xs font-semibold">Beranda</span>
         </a>
         <a
           href="#"
-          class="w-full group flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+          class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
         >
           <span
-            class="i-material-symbols-receipt-outline-rounded text-xl inline group-hover:hidden"
+            class="i-material-symbols-receipt-outline-rounded text-icon-md inline group-hover:hidden"
           ></span>
-
           <span
-            class="i-material-symbols-receipt-rounded text-xl hidden group-hover:inline"
+            class="i-material-symbols-receipt-rounded text-icon-md hidden group-hover:inline"
           ></span>
-
-          <span class="text-xs font-semibold">History</span>
+          <span class="text-xs font-semibold">Riwayat</span>
         </a>
         <a
           href="#"
-          class="w-full group flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+          class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
         >
           <span
-            class="i-material-symbols-person-outline text-xl inline group-hover:hidden"
+            class="i-material-symbols-person-outline-rounded text-icon-md inline group-hover:hidden"
           ></span>
-
           <span
-            class="i-material-symbols-person text-xl hidden group-hover:inline"
+            class="i-material-symbols-person-rounded text-icon-md hidden group-hover:inline"
           ></span>
-
-          <span class="text-xs font-semibold">Account</span>
+          <span class="text-xs font-semibold">Akun</span>
         </a>
       </div>
-      <!-- navbar -->
+      <!-- ./ Navbar -->
     </div>
   </body>
 </html>
