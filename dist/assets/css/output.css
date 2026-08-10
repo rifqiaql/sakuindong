@@ -17,6 +17,8 @@
     --color-emerald-100: oklch(95% 0.052 163.051);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-blue-50: oklch(97% 0.014 254.604);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
+    --color-rose-400: oklch(71.2% 0.194 13.428);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -691,6 +693,12 @@
   }
   .bg-green-50 {
     background-color: var(--color-green-50);
+  }
+  .bg-pink-400 {
+    background-color: var(--color-pink-400);
+  }
+  .bg-rose-400 {
+    background-color: var(--color-rose-400);
   }
   .bg-transparent {
     background-color: transparent;
